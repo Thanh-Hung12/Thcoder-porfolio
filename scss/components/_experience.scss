@@ -1,0 +1,66 @@
+.experience {
+    background-color: #0d0d0d;
+    color: #fff;
+    padding: 3rem 1rem;
+    gap: 20px;
+    display: flex;
+    flex-direction: column;
+
+    .section-title {
+        font-size: 110px;
+        font-weight: bold;
+        text-transform: uppercase;
+        line-height: 1;
+
+        span {
+            color: rgba(182, 180, 189, 0.2);
+        }
+    }
+
+    &__list {
+        display: flex;
+        flex-direction: column;
+
+    }
+
+    &__item {
+        background-color: #111;
+        padding: 1.5rem;
+        border-radius: 10px;
+        position: relative;
+    }
+
+    &__header {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+
+    &__company {
+        font-size: 1.3rem;
+        font-weight: 700;
+    }
+
+    &__link {
+        color: orange;
+        font-size: 1.2rem;
+        text-decoration: none;
+        transition: transform 0.2s ease;
+
+        &:hover {
+            transform: scale(1.1);
+        }
+    }
+
+    &__desc {
+        margin: 0.8rem 0;
+        color: #ccc;
+        line-height: 1.6;
+        max-width: 420px;
+    }
+
+    &__time {
+        color: #aaa;
+        font-size: 0.9rem;
+    }
+}

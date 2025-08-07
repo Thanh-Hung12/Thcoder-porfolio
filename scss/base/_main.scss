@@ -1,0 +1,26 @@
+.main {
+    flex: 1;
+    margin-left: 464px;
+    padding: 160px 0;
+
+}
+
+@media (max-width: 1024px) {
+    .main {
+        margin-left: 0;
+    }
+}
+
+.btn_top {
+    border: none;
+    border-radius: 50%;
+    height: 45px;
+    width: 45px;
+    color: rgb(255, 106, 42);
+    background: rgb(42, 42, 42);
+    display: block;
+    position: fixed;
+    right: 20px;
+    bottom: 20px;
+
+}

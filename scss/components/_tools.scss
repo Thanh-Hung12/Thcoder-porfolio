@@ -1,0 +1,77 @@
+.tools {
+    padding: 3rem 1rem;
+    background-color: #0d0d0d;
+    color: #fff;
+    gap: 20px;
+    display: flex;
+    flex-direction: column;
+
+    .section-title {
+        font-size: 110px;
+        font-weight: bold;
+        text-transform: uppercase;
+        line-height: 1;
+
+        span {
+            color: rgba(182, 180, 189, 0.2);
+        }
+    }
+
+    &__list {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        gap: 2rem;
+    }
+
+    .tool {
+        display: flex;
+        align-items: center;
+        gap: 1rem;
+
+
+        &__icon {
+            width: 50px;
+            height: 50px;
+            object-fit: contain;
+
+        }
+
+        &__info {
+            display: flex;
+            flex-direction: column;
+        }
+
+        &__name {
+            font-size: 1.2rem;
+            font-weight: 600;
+        }
+
+        &__desc {
+            font-size: 0.9rem;
+            color: #aaa;
+        }
+
+        &__img {
+            width: 64px;
+        }
+
+
+
+
+
+
+    }
+}
+
+/* Tablet */
+@media (max-width: 1024px) {
+    .tools__list {
+        grid-template-columns: repeat(3, 1fr);
+    }
+}
+
+@media (max-width: 768px) {
+    .tools__list {
+        grid-template-columns: repeat(1, 1fr);
+    }
+}

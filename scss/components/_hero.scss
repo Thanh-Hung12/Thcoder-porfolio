@@ -1,0 +1,132 @@
+.hero {
+
+    color: #fff;
+    background-color: #0a0a0a;
+
+    &__title {
+        font-size: 110px;
+        font-weight: bold;
+        text-transform: uppercase;
+        line-height: 1;
+    }
+
+    &__highlight {
+        color: #b6b4bd33;
+    }
+
+    &__desc {
+
+        font-size: 18px;
+        line-height: 1.6;
+        max-width: 500px;
+        color: #998f8f;
+    }
+
+    &__stats {
+        display: flex;
+        gap: 40px;
+        margin-top: 2rem;
+
+        & .hero__stat {
+            .counter {
+                font-size: 70px;
+                font-weight: bold;
+                color: white;
+            }
+
+
+            span {
+                display: block;
+                font-size: 16px;
+                font-weight: normal;
+                color: #998f8f;
+            }
+        }
+    }
+
+    &__skills {
+        margin-top: 2rem;
+        display: flex;
+        gap: 1rem;
+    }
+}
+
+.skill-card {
+    padding: 40px 20px 22px;
+    border-radius: 8px;
+    font-weight: bold;
+    font-size: 24px;
+    color: #000;
+
+    .skill-text {
+        text-align: left;
+    }
+
+    &--orange {
+        background-color: #ff5e00;
+        color: #fff;
+        background-image: url(/imgs/bg-engineeer-1.svg);
+    }
+
+    &--green {
+        background-color: #c5ff41;
+        background-image: url(/imgs/bg-engineeer-2.svg);
+        background-repeat: round;
+
+
+        .skill-iconTwo {
+            border: 1px solid black !important;
+        }
+    }
+
+    .skill-iconOne {
+        width: 38px;
+        height: auto;
+    }
+
+    .skill-iconTwo {
+        border-radius: 6px;
+        border: 1px solid white;
+        padding: 10px;
+        width: fit-content;
+        height: 32px;
+        width: 32px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+
+        svg {
+            max-width: 20px;
+
+
+        }
+
+    }
+
+    .skill-button {
+        display: flex;
+        justify-content: end;
+    }
+
+}
+
+/* Tablet */
+@media (max-width: 1024px) {
+    .hero {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+    }
+}
+
+@media (max-width: 768px) {
+    .section-title {
+        font-size: 52px !important;
+    }
+
+    .hero__skills {
+        display: flex;
+        flex-direction: column;
+    }
+}
