@@ -1,0 +1,765 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Rentaly - Multipurpose Vehicle Car Rental Website Template</title>
+    <link rel="icon" href="/img/logo.png" type="image/gif" sizes="16x16">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.css" />
+    <link rel="stylesheet" href="styles/style.css" />
+    <meta content="Rentaly - Multipurpose Vehicle Car Rental Website Template" name="description">
+    <meta property="og:image" content="https://i.ibb.co/G4GbGSDW/thumbnail.png">
+    <!-- Font Awesome CDN -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+
+</head>
+
+<body>
+    <section class="banner">
+        <div class="banner__topbar">
+            <div class="banner__contact">
+                <span class="banner__phone">
+                    <i class="fa-solid fa-phone"></i> +208 333 9296
+                </span>
+                <span class="banner__email">
+                    <i class="fa-solid fa-envelope"></i> contact@rentaly.com
+                </span>
+                <span class="banner__time">
+                    <i class="fa-regular fa-clock"></i> Mon - Fri 08.00 - 18.00
+                </span>
+            </div>
+            <div class="banner__socials">
+                <a href="#" class="banner__social"><i class="fa-brands fa-facebook-f"></i></a>
+                <a href="#" class="banner__social"><i class="fa-brands fa-twitter"></i></a>
+                <a href="#" class="banner__social"><i class="fa-brands fa-youtube"></i></a>
+                <a href="#" class="banner__social"><i class="fa-brands fa-pinterest"></i></a>
+                <a href="#" class="banner__social"><i class="fa-brands fa-instagram"></i></a>
+            </div>
+        </div>
+
+        <div class="rentaly__navbar">
+            <!-- Logo bên trái -->
+            <div class="rentaly__logo">
+                <img src="https://www.madebydesignesia.com/themes/rentaly/images/logo-light.png" alt="Rentaly Logo"
+                    class="rentaly__logo-image" />
+            </div>
+
+            <!-- Menu chính giữa -->
+            <nav class="rentaly__nav">
+                <ul class="rentaly__nav-list">
+                    <li class="rentaly__nav-item">Home <i class="fa-solid fa-chevron-down"></i></li>
+                    <li class="rentaly__nav-item">Cars <i class="fa-solid fa-chevron-down"></i></li>
+                    <li class="rentaly__nav-item">Booking <i class="fa-solid fa-chevron-down"></i></li>
+                    <li class="rentaly__nav-item">My Account <i class="fa-solid fa-chevron-down"></i></li>
+                    <li class="rentaly__nav-item">Pages <i class="fa-solid fa-chevron-down"></i></li>
+                    <li class="rentaly__nav-item">News <i class="fa-solid fa-chevron-down"></i></li>
+                    <li class="rentaly__nav-item">Elements <i class="fa-solid fa-chevron-down"></i></li>
+                </ul>
+            </nav>
+
+            <!-- Nút Sign In bên phải -->
+            <div class="rentaly__signin">
+                <a href="#" class="rentaly__signin-btn">Sign In</a>
+            </div>
+            <div class="rentaly__menu">
+                <i class="fa-solid fa-bars"></i>
+            </div>
+        </div>
+        </div>
+
+        <div class="swiper banner__slider">
+            <div class="swiper-wrapper">
+                <div class="swiper-slide banner__slide">
+                    <img src="https://www.madebydesignesia.com/themes/rentaly/images/slider/1.jpg" alt=""
+                        class="banner__background" />
+                    <div class="banner__content">
+                        <h1 class="banner__title" data-aos="fade-up">Save Drivers</h1>
+
+                        <p class="banner__desc" data-aos="fade-up" data-aos-delay="200">
+                            Our experienced drivers are ready to accompany your journey.
+                        </p>
+
+                        <a href="#" class="banner__btn" data-aos="fade-up" data-aos-delay="400">
+                            Discover
+                        </a>
+                    </div>
+
+                </div>
+                <div class="swiper-slide banner__slide">
+                    <img src="https://www.madebydesignesia.com/themes/rentaly/images/slider/2.jpg" alt=""
+                        class="banner__background" />
+                    <div class="banner__content">
+                        <h1 class="banner__title">Affordable Rentals</h1>
+                        <p class="banner__desc">The best car rental deals around you.</p>
+                        <a href="#" class="banner__btn">Book Now</a>
+                    </div>
+                </div>
+                <div class="swiper-slide banner__slide">
+                    <img src="https://www.madebydesignesia.com/themes/rentaly/images/slider/3.jpg" alt=""
+                        class="banner__background" />
+                    <div class="banner__content">
+                        <h1 class="banner__title">Affordable Rentals</h1>
+                        <p class="banner__desc">The best car rental deals around you.</p>
+                        <a href="#" class="banner__btn">Book Now</a>
+                    </div>
+                </div>
+
+            </div>
+
+            <!-- Swiper arrows -->
+            <div class="swiper-button-prev"></div>
+            <div class="swiper-button-next"></div>
+            <!-- Swiper pagination -->
+            <div class="swiper-pagination"></div>
+    </section>
+
+    <section class="fleet">
+        <div class="fleet__header">
+            <h2 class="fleet__title">Our Vehicle Fleet</h2>
+            <p class="fleet__description">
+                Driving your dreams to reality with an exquisite fleet of versatile vehicles for unforgettable journeys.
+            </p>
+        </div>
+
+        <div class="swiper fleet__slider">
+            <div class="swiper-wrapper">
+                <!-- Card 1 -->
+                <div class="swiper-slide fleet__card">
+                    <img src="https://www.madebydesignesia.com/themes/rentaly/images/cars/jeep-renegade.jpg"
+                        class="fleet__image" alt="Jeep Renegade">
+                    <div class="fleet__body">
+                        <h3 class="fleet__name">Jeep Renegade</h3>
+                        <div class="fleet__meta">
+                            <span><img src="https://www.madebydesignesia.com/themes/rentaly/images/icons/1-green.svg"
+                                    alt=""> 5</span>
+                            <span><img src="https://www.madebydesignesia.com/themes/rentaly/images/icons/2-green.svg"
+                                    alt=""> 2</span>
+                            <span><img src="https://www.madebydesignesia.com/themes/rentaly/images/icons/4-green.svg"
+                                    alt=""> 4</span>
+                            <span>SUV</span>
+                        </div>
+                        <div class="fleet__like">❤️ 74</div>
+                        <div class="fleet__footer">
+                            <div class="fleet__price">
+                                <span>Daily rate from</span>
+                                <strong>$265</strong>
+                            </div>
+                            <a href="#" class="fleet__btn">Rent Now</a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Card 2 -->
+                <div class="swiper-slide fleet__card">
+                    <img src="https://www.madebydesignesia.com/themes/rentaly/images/cars/bmw-m5.jpg"
+                        class="fleet__image" alt="BMW M2">
+                    <div class="fleet__body">
+                        <h3 class="fleet__name">BMW M2</h3>
+                        <div class="fleet__meta">
+                            <span><img src="https://www.madebydesignesia.com/themes/rentaly/images/icons/1-green.svg"
+                                    alt=""> 5</span>
+                            <span><img src="https://www.madebydesignesia.com/themes/rentaly/images/icons/2-green.svg"
+                                    alt=""> 2</span>
+                            <span><img src="https://www.madebydesignesia.com/themes/rentaly/images/icons/4-green.svg"
+                                    alt=""> 4</span>
+                            <span>Sedan</span>
+                        </div>
+                        <div class="fleet__like">❤️ 36</div>
+                        <div class="fleet__footer">
+                            <div class="fleet__price">
+                                <span>Daily rate from</span>
+                                <strong>$244</strong>
+                            </div>
+                            <a href="#" class="fleet__btn">Rent Now</a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Card 3 -->
+                <div class="swiper-slide fleet__card">
+                    <img src="https://www.madebydesignesia.com/themes/rentaly/images/cars/ferrari-enzo.jpg"
+                        class="fleet__image" alt="Ferrari Enzo">
+                    <div class="fleet__body">
+                        <h3 class="fleet__name">Ferarri Enzo</h3>
+                        <div class="fleet__meta">
+                            <span><img src="https://www.madebydesignesia.com/themes/rentaly/images/icons/1-green.svg"
+                                    alt=""> 5</span>
+                            <span><img src="https://www.madebydesignesia.com/themes/rentaly/images/icons/2-green.svg"
+                                    alt=""> 2</span>
+                            <span><img src="https://www.madebydesignesia.com/themes/rentaly/images/icons/4-green.svg"
+                                    alt=""> 4</span>
+                            <span>Exotic Car</span>
+                        </div>
+                        <div class="fleet__like">❤️ 85</div>
+                        <div class="fleet__footer">
+                            <div class="fleet__price">
+                                <span>Daily rate from</span>
+                                <strong>$167</strong>
+                            </div>
+                            <a href="#" class="fleet__btn">Rent Now</a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Card 1 -->
+                <div class="swiper-slide fleet__card">
+                    <img src="https://www.madebydesignesia.com/themes/rentaly/images/cars/ford-raptor.jpg"
+                        class="fleet__image" alt="Jeep Renegade">
+                    <div class="fleet__body">
+                        <h3 class="fleet__name">Jeep Renegade</h3>
+                        <div class="fleet__meta">
+                            <span><img src="https://www.madebydesignesia.com/themes/rentaly/images/icons/1-green.svg"
+                                    alt=""> 5</span>
+                            <span><img src="https://www.madebydesignesia.com/themes/rentaly/images/icons/2-green.svg"
+                                    alt=""> 2</span>
+                            <span><img src="https://www.madebydesignesia.com/themes/rentaly/images/icons/4-green.svg"
+                                    alt=""> 4</span>
+                            <span>SUV</span>
+                        </div>
+                        <div class="fleet__like">❤️ 74</div>
+                        <div class="fleet__footer">
+                            <div class="fleet__price">
+                                <span>Daily rate from</span>
+                                <strong>$265</strong>
+                            </div>
+                            <a href="#" class="fleet__btn">Rent Now</a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Card 2 -->
+                <div class="swiper-slide fleet__card">
+                    <img src="https://www.madebydesignesia.com/themes/rentaly/images/cars/bmw-m5.jpg"
+                        class="fleet__image" alt="BMW M2">
+                    <div class="fleet__body">
+                        <h3 class="fleet__name">BMW M2</h3>
+                        <div class="fleet__meta">
+                            <span><img src="https://www.madebydesignesia.com/themes/rentaly/images/icons/1-green.svg"
+                                    alt=""> 5</span>
+                            <span><img src="https://www.madebydesignesia.com/themes/rentaly/images/icons/2-green.svg"
+                                    alt=""> 2</span>
+                            <span><img src="https://www.madebydesignesia.com/themes/rentaly/images/icons/4-green.svg"
+                                    alt=""> 4</span>
+                            <span>Sedan</span>
+                        </div>
+                        <div class="fleet__like">❤️ 36</div>
+                        <div class="fleet__footer">
+                            <div class="fleet__price">
+                                <span>Daily rate from</span>
+                                <strong>$244</strong>
+                            </div>
+                            <a href="#" class="fleet__btn">Rent Now</a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Card 3 -->
+                <div class="swiper-slide fleet__card">
+                    <img src="https://www.madebydesignesia.com/themes/rentaly/images/cars/mini-cooper.jpg"
+                        class="fleet__image" alt="Ferrari Enzo">
+                    <div class="fleet__body">
+                        <h3 class="fleet__name">Ferarri Enzo</h3>
+                        <div class="fleet__meta">
+                            <span><img src="https://www.madebydesignesia.com/themes/rentaly/images/icons/1-green.svg"
+                                    alt=""> 5</span>
+                            <span><img src="https://www.madebydesignesia.com/themes/rentaly/images/icons/2-green.svg"
+                                    alt=""> 2</span>
+                            <span><img src="https://www.madebydesignesia.com/themes/rentaly/images/icons/4-green.svg"
+                                    alt=""> 4</span>
+                            <span>Exotic Car</span>
+                        </div>
+                        <div class="fleet__like">❤️ 85</div>
+                        <div class="fleet__footer">
+                            <div class="fleet__price">
+                                <span>Daily rate from</span>
+                                <strong>$167</strong>
+                            </div>
+                            <a href="#" class="fleet__btn">Rent Now</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Navigation -->
+            <div class="swiper-button-prev"></div>
+            <div class="swiper-button-next"></div>
+        </div>
+    </section>
+    <section class="hero">
+        <div class="hero__overlay"></div>
+        <div class="hero__content">
+            <div class="hero__text">
+                <h1 class="hero__title" data-aos="fade-right">
+                    We offer customers a wide range of
+                    commercial cars and luxury cars for any occasion.
+                </h1>
+            </div>
+            <div class="hero__description">
+                <p class="hero__desc-text" data-aos="fade-left">
+
+                    At our car rental agency, we believe that everyone deserves to experience the pleasure of driving a
+                    reliable and comfortable vehicle, regardless of their budget. We have curated a diverse fleet of
+                    well-maintained cars, ranging from sleek sedans to spacious SUVs, all at competitive prices. With
+                    our streamlined rental process, you can quickly and conveniently reserve your desired vehicle.
+                    Whether you need transportation for a business trip, family vacation, or simply want to enjoy a
+                    weekend getaway, we have flexible rental options to accommodate your schedule.
+
+                </p>
+            </div>
+        </div>
+
+        <!-- Stats -->
+        <!-- AOS wrapper -->
+        <div class=" hero__stats" data-aos="fade-up">
+            <div class="hero__counter">
+                <div class="hero__stat">
+                    <div class="hero__number" data-count="15425">0</div>
+                    <div class="hero__label">Completed Orders</div>
+                </div>
+                <div class="hero__stat">
+                    <div class="hero__number" data-count="8745">0</div>
+                    <div class="hero__label">Happy Customers</div>
+                </div>
+                <div class="hero__stat">
+                    <div class="hero__number" data-count="235">0</div>
+                    <div class="hero__label">Vehicles Fleet</div>
+                </div>
+                <div class="hero__stat">
+                    <div class="hero__number" data-count="15">0</div>
+                    <div class="hero__label">Years Experience</div>
+                </div>
+            </div>
+        </div>
+
+    </section>
+    <section class="features">
+        <div class="features__intro">
+            <h2 class="features__title">Our Features</h2>
+            <p class="features__desc">
+                Discover a world of convenience, safety, and customization, paving the way for
+                unforgettable adventures and seamless mobility solutions.
+            </p>
+        </div>
+
+        <div class="features__content">
+            <div class="features__list features__list--left">
+                <div class="features__item" data-aos="fade-right">
+                    <div class="features__icon">
+                        <i class="fa-solid fa-trophy"></i>
+                    </div>
+                    <div class="features__info" data-aos="fade-right">
+                        <h4 class="features__name">First class services</h4>
+                        <p class="features__text">
+                            Where luxury meets exceptional care, creating unforgettable moments and exceeding your every
+                            expectation.
+                        </p>
+                    </div>
+                </div>
+                <div class="features__item" data-aos="fade-right">
+                    <div class="features__icon">
+                        <i class="fa-solid fa-road"></i>
+                    </div>
+                    <div class="features__info">
+                        <h4 class="features__name">24/7 road assistance</h4>
+                        <p class="features__text">
+                            Reliable support when you need it most, keeping you on the move with confidence and peace of
+                            mind.
+                        </p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="features__image">
+                <img src="https://www.madebydesignesia.com/themes/rentaly/images/misc/car-2.png" alt="Car"
+                    data-aos="fade-up" />
+            </div>
+
+            <div class="features__list features__list--right">
+                <div class="features__item" data-aos="fade-right">
+                    <div class="features__icon">
+                        <i class="fa-solid fa-tag"></i>
+                    </div>
+                    <div class="features__info" data-aos="fade-right">
+                        <h4 class="features__name">Quality at Minimum Expense</h4>
+                        <p class="features__text">
+                            Unlocking affordable brilliance with elevating quality while minimizing costs for maximum
+                            value.
+                        </p>
+                    </div>
+                </div>
+                <div class="features__item" data-aos="fade-right">
+                    <div class="features__icon">
+                        <i class="fa-solid fa-map-pin"></i>
+                    </div>
+                    <div class="features__info" data-aos="fade-right">
+                        <h4 class="features__name">Free Pick-Up & Drop-Off</h4>
+                        <p class="features__text">
+                            Enjoy free pickup and drop-off services, adding an extra layer of ease to your car rental
+                            experience.
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="testimonial">
+        <div class=" testimonial__card testimonial__card--top">
+            <div class="testimonial__overlay">
+                <div class="testimonial__content">
+                    <i class="fa-solid fa-quote-right"></i>
+                    <h3 class="testimonial__title">Excellent Service! Car Rent Service!</h3>
+                    <p class="testimonial__text">
+                        I have been using Rentaly for my Car Rental needs for over 5 years now. I have never had any
+                        problems with their service.
+                        Their customer support is always responsive and helpful. I would recommend Rentaly to anyone
+                        looking for a reliable Car Rental provider.
+                    </p>
+                    <p class="testimonial__author">— Stepanie Hutchkiss</p>
+                </div>
+            </div>
+        </div>
+
+        <div class="testimonial__card testimonial__card--middle">
+            <div class="testimonial__overlay">
+                <div class="testimonial__content">
+                    <i class="fa-solid fa-quote-right"></i>
+                    <h3 class="testimonial__title">Excellent Service! Car Rent Service!</h3>
+                    <p class="testimonial__text">
+                        We have been using Rentaly for our trips needs for several years now and have always been happy
+                        with their service.
+                        Their customer support is Excellent Service! and they are always available to help with any
+                        issues we have.
+                    </p>
+                    <p class="testimonial__author">— Jovan Reels</p>
+                </div>
+            </div>
+        </div>
+
+        <div class="testimonial__card testimonial__card--bottom">
+            <div class="testimonial__overlay">
+                <div class="testimonial__content">
+                    <i class="fa-solid fa-quote-right"></i>
+                    <h3 class="testimonial__title">Excellent Service! Car Rent Service!</h3>
+                    <p class="testimonial__text">
+                        Endorsed by industry experts, Rentaly is the Car Rental solution you can trust. With years of
+                        experience in the field,
+                        we provide fast, reliable and secure Car Rental services.
+                    </p>
+                    <p class="testimonial__author">— Kanesha Keyton</p>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="latest-news">
+        <div class="latest-news__header">
+            <h2 class="latest-news__title">Latest News</h2>
+            <p class="latest-news__description">Breaking news, fresh perspectives, and in-depth coverage - stay ahead
+                with our latest news, insights, and analysis.</p>
+        </div>
+        <div class="latest-news__grid">
+            <article class="latest-news-card">
+                <div class="latest-news-card__image-wrapper">
+                    <img src="https://www.madebydesignesia.com/themes/rentaly/images/news/pic-blog-1.jpg"
+                        alt="Car driving on a scenic road" class="latest-news-card__image">
+                    <div class="latest-news-card__date">
+                        <span class="latest-news-card__day">10</span>
+                        <span class="latest-news-card__month">MAR</span>
+                    </div>
+                </div>
+                <div class="latest-news-card__content">
+                    <h3 class="latest-news-card__heading">Enjoy Best Travel Experience</h3>
+                    <p class="latest-news-card__text">Traveling is an enriching experience that allows us to explore new
+                        destinations, immerse ourselves in different cultures, and create lifelong memories.</p>
+                    <a href="#" class="latest-news-card__button">Read More</a>
+                </div>
+            </article>
+
+            <article class="latest-news-card">
+                <div class="latest-news-card__image-wrapper">
+                    <img src="https://www.madebydesignesia.com/themes/rentaly/images/news/pic-blog-2.jpg"
+                        alt="Person driving a car" class="latest-news-card__image">
+                    <div class="latest-news-card__date">
+                        <span class="latest-news-card__day">12</span>
+                        <span class="latest-news-card__month">MAR</span>
+                    </div>
+                </div>
+                <div class="latest-news-card__content">
+                    <div class="latest-news-card-content-one
+                    ">
+                        <h3 class="latest-news-card__heading">The Future of Car Rent</h3>
+                        <p class="latest-news-card__text">As technology continues to advance at a rapid pace, the car
+                            rental
+                            industry is poised for a transformative shift. The future of car rental promises...</p>
+                    </div>
+                    <a href="#" class="latest-news-card__button">Read More</a>
+                </div>
+            </article>
+
+            <article class="latest-news-card">
+                <div class="latest-news-card__image-wrapper">
+                    <img src="https://www.madebydesignesia.com/themes/rentaly/images/news/pic-blog-3.jpg"
+                        alt="Backpacker looking at a mountain view" class="latest-news-card__image">
+                    <div class="latest-news-card__date">
+                        <span class="latest-news-card__day">14</span>
+                        <span class="latest-news-card__month">MAR</span>
+                    </div>
+                </div>
+                <div class="latest-news-card__content">
+                    <h3 class="latest-news-card__heading">Holiday Tips For Backpacker</h3>
+                    <p class="latest-news-card__text">For adventure seekers and budget-conscious travelers, backpacking
+                        offers a thrilling and immersive way to explore the world. Whether you're embarking...</p>
+                    <a href="#" class="latest-news-card__button">Read More</a>
+                </div>
+            </article>
+        </div>
+    </section>
+
+    <section class="adventure">
+        <div class="adventure__container">
+            <div class="adventure__intro">
+                <h2 class="adventure__title">Let's Your <br> Adventure Begin</h2>
+            </div>
+
+            <div class="adventure__features">
+                <div class="adventure__feature">
+                    <div class="adventure__icon">
+                        <i class="fa-solid fa-trophy"></i>
+                    </div>
+                    <h3 class="adventure__heading">First Class Services</h3>
+                    <p class="adventure__desc">
+                        Where luxury meets exceptional care, creating unforgettable moments and exceeding your every
+                        expectation.
+                    </p>
+                </div>
+
+                <div class="adventure__feature">
+                    <div class="adventure__icon">
+                        <i class="fa-solid fa-road"></i>
+                    </div>
+                    <h3 class="adventure__heading">24/7 road assistance</h3>
+                    <p class="adventure__desc">
+                        Reliable support when you need it most, keeping you on the move with confidence and peace of
+                        mind.
+                    </p>
+                </div>
+
+                <div class="adventure__feature">
+                    <div class="adventure__icon">
+                        <i class="fa-solid fa-map-pin"></i>
+                    </div>
+                    <h3 class="adventure__heading">Free Pick-Up & Drop-Off</h3>
+                    <p class="adventure__desc">
+                        Enjoy free pickup and drop-off services, adding an extra layer of ease to your car rental
+                        experience.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="faq">
+        <div class="faq__container">
+            <h2 class="faq__title">Have Any Questions? </h2>
+            <div class="faq__grid" data-aos="fade-up">
+                <div class="faq__item">
+                    <p class="faq__question">How do I get started with Car Rental?</p>
+                    <button class="faq__toggle">▼</button>
+                </div>
+                <div class="faq__item">
+                    <p class="faq__question">What is a rental car security deposit?</p>
+                    <button class="faq__toggle">▼</button>
+                </div>
+                <div class="faq__item">
+                    <p class="faq__question">Can I rent a car with a debit card??</p>
+                    <button class="faq__toggle">▼</button>
+                </div>
+                <div class="faq__item">
+                    <p class="faq__question">Can I cancel or modify my reservation?</p>
+                    <button class="faq__toggle">▼</button>
+                </div>
+                <div class="faq__item">
+                    <p class="faq__question">What kind of Car Rental do I need?</p>
+                    <button class="faq__toggle">▼</button>
+                </div>
+                <div class="faq__item">
+                    <p class="faq__question">Is it possible to extend my rental period?</p>
+                    <button class="faq__toggle">▼</button>
+                </div>
+            </div>
+        </div>
+
+        <!-- Swiper Section -->
+        <div class="faq__swiper swiper">
+            <div class="swiper-wrapper">
+                <div class="swiper-slide car-type__item">Sedan</div>
+                <div class="swiper-slide car-type__item">SUV</div>
+                <div class="swiper-slide car-type__item">Hatchback</div>
+                <div class="swiper-slide car-type__item">Crossover</div>
+                <div class="swiper-slide car-type__item">Convertible</div>
+                <div class="swiper-slide car-type__item">Sedan</div>
+                <div class="swiper-slide car-type__item">SUV</div>
+                <div class="swiper-slide car-type__item">Hatchback</div>
+                <div class="swiper-slide car-type__item">Crossover</div>
+                <div class="swiper-slide car-type__item">Convertible</div>s
+            </div>
+        </div>
+    </section>
+
+    <footer class="footer">
+        <div class="footer__container">
+            <div class="footer__column footer__about">
+                <h4 class="footer__title">About Rentaly</h4>
+                <p class="footer__text">
+                    Where quality meets affordability. We understand the importance of a smooth and enjoyable journey
+                    without the burden of excessive costs. That’s why we have meticulously crafted our offerings to
+                    provide you with top-notch vehicles at minimum expense.
+                </p>
+            </div>
+
+            <div class="footer__column footer__contact">
+                <h4 class="footer__title">Contact Info</h4>
+                <ul class="footer__list">
+                    <li><i class="fa fa-map-marker"></i> 08 W 36th St, New York, NY 10001</li>
+                    <li><i class="fa fa-phone"></i> +1 333 9296</li>
+                    <li><i class="fa fa-envelope"></i> contact@example.com</li>
+                    <li><i class="fa fa-file"></i> <a href="#">Download Brochure</a></li>
+                </ul>
+            </div>
+
+            <div class="footer__column footer__links">
+                <h4 class="footer__title">Quick Links</h4>
+                <ul class="footer__list">
+                    <li><a href="#">About</a></li>
+                    <li><a href="#">Blog</a></li>
+                    <li><a href="#">Careers</a></li>
+                    <li><a href="#">News</a></li>
+                    <li><a href="#">Partners</a></li>
+                </ul>
+            </div>
+
+            <div class="footer__column footer__social">
+                <h4 class="footer__title">Social Network</h4>
+                <div class="footer__icons">
+                    <a href="#">
+                        <i class="fa-brands fa-facebook"></i>
+
+                    </a>
+                    <a href="#">
+                        <i class="fa-brands fa-twitter"></i>
+                    </a>
+                    <a href="#">
+                        <i class="fa-brands fa-linkedin-in"></i></i>
+                    </a>
+                    <a href="#"><i class="fa-brands fa-pinterest"></i></a>
+                    <a href="#"><i class="fa-solid fa-rss"></i></a>
+                </div>
+            </div>
+        </div>
+        <div class="footer-one">
+            <div class="footer__bottom">
+                <p class="footer__copyright">
+                    Copyright 2025 – Rentaly by Designesia
+                </p>
+                <div class="footer__policies">
+                    <a href="#">Terms & Conditions</a>
+                    <a href="#">Privacy Policy</a>
+                </div>
+                <div class="footer__scroll-top">
+                    <button><i class="fa fa-arrow-up"></i></button>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+
+
+
+
+
+
+
+    <script src="https://cdn.jsdelivr.net/npm/countup.js@2.0.7/dist/countUp.umd.js"></script>
+
+
+
+    <script src="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.js"></script>
+    <script>
+        const swiper = new Swiper('.swiper', {
+            loop: true,
+            pagination: {
+                el: '.swiper-pagination',
+                clickable: true
+            },
+            navigation: {
+                nextEl: '.swiper-button-next',
+                prevEl: '.swiper-button-prev'
+            }
+        });
+        const swiper1 = new Swiper('.fleet__slider', {
+            loop: true,
+            slidesPerView: 1,
+            spaceBetween: 30,
+            breakpoints: {
+                768: {
+                    slidesPerView: 2
+                },
+                1024: {
+                    slidesPerView: 3
+                }
+            },
+            navigation: {
+                nextEl: '.swiper-button-next',
+                prevEl: '.swiper-button-prev'
+            }
+        });
+        document.querySelectorAll('.hero__number').forEach((el) => {
+            const endVal = parseInt(el.dataset.count);
+            const counter = new countUp.CountUp(el, endVal);
+            if (!counter.error) counter.start();
+        });
+        const swiper2 = new Swiper('.layout__category', {
+            slidesPerView: 5,
+            spaceBetween: 40,
+            loop: true,
+            autoplay: {
+                delay: 3000, // thời gian giữa mỗi lần chuyển slide (ms)
+                disableOnInteraction: false, // không tắt autoplay khi người dùng tương tác
+            },
+        });
+        const swiper3 = new Swiper(".faq__swiper", {
+            slidesPerView: 3,
+            spaceBetween: 40,
+            loop: true,
+            autoplay: {
+                delay: 1000,
+            },
+            breakpoints: {
+                768: {
+                    slidesPerView: 3,
+                },
+                480: {
+                    slidesPerView: 2,
+                },
+                0: {
+                    slidesPerView: 1,
+                },
+            },
+        });
+
+    </script>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+        AOS.init();
+    </script>
+
+    <script>
+        AOS.init({
+            duration: 800, // thời gian animation
+            once: true    // chỉ chạy 1 lần khi cuộn đến
+        });
+    </script>
+</body>
+
+
+</html>
