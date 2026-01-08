@@ -1,0 +1,87 @@
+@import '../abstracts/variables';
+@import '../abstracts/mixins';
+
+.layout_container {
+  display: flex;
+  min-height: 100vh;
+  background-color: $color-dark;
+}
+
+.layout {
+  display: grid;
+  grid-template-columns: 300px 1fr;
+  width: 100%;
+
+  @include responsive('tablet') {
+    grid-template-columns: 1fr;
+  }
+}
+
+.main {
+  flex: 1;
+  padding: $spacing-3xl;
+  background-color: $color-dark;
+  overflow-y: auto;
+  max-height: 100vh;
+
+  @include responsive('tablet') {
+    padding: $spacing-2xl;
+    max-height: unset;
+  }
+
+  @include responsive('mobile') {
+    padding: $spacing-lg;
+  }
+}
+
+section {
+  scroll-margin-top: 100px;
+  margin-bottom: $spacing-3xl;
+
+  @include responsive('mobile') {
+    margin-bottom: $spacing-2xl;
+  }
+}
+
+.btn_top {
+  position: fixed;
+  bottom: 100px;
+  right: $spacing-2xl;
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  background-color: $color-primary;
+  color: $color-white;
+  @include flex-center;
+  font-size: $font-size-xl;
+  cursor: pointer;
+  @include transition();
+  border: none;
+  display: none;
+  z-index: 999;
+
+  &:hover {
+    background-color: $color-secondary;
+    transform: translateY(-5px);
+  }
+
+  &.show {
+    display: flex;
+  }
+
+  @include responsive('tablet') {
+    bottom: 80px;
+    right: $spacing-lg;
+    width: 45px;
+    height: 45px;
+    font-size: $font-size-lg;
+  }
+
+  @include responsive('mobile') {
+    bottom: 60px;
+    right: $spacing-md;
+    width: 40px;
+    height: 40px;
+    font-size: $font-size-base;
+  }
+}

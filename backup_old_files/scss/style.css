@@ -79,6 +79,15 @@ body {
 @media (max-width: 768px) {
   .layout {
     padding: 160px 20px;
+    display: flex;
+
+    flex-direction: column;
+  }
+  .sidebar{
+    display: block !important;
+        position: unset;
+        width: 100%;
+        height: auto;
   }
 }
 .sidebar {

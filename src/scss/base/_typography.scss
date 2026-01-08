@@ -1,0 +1,64 @@
+@import '../abstracts/variables';
+@import '../abstracts/mixins';
+
+h1, h2, h3, h4, h5, h6 {
+  font-weight: $font-weight-bold;
+  line-height: 1.2;
+  color: $color-white;
+}
+
+p {
+  font-size: $font-size-base;
+  color: $color-text;
+}
+
+a {
+  color: $color-accent;
+  text-decoration: none;
+  @include transition();
+
+  &:hover {
+    color: $color-primary;
+  }
+}
+
+button {
+  font-family: $font-primary;
+  cursor: pointer;
+  border: none;
+  background: none;
+}
+
+input, textarea {
+  font-family: $font-primary;
+  background-color: $color-dark-light;
+  color: $color-text;
+  border: 1px solid $color-dark-light;
+  padding: $spacing-sm;
+  border-radius: $border-radius-md;
+  @include transition();
+
+  &:focus {
+    outline: none;
+    border-color: $color-primary;
+    box-shadow: 0 0 0 3px rgba(255, 107, 53, 0.1);
+  }
+
+  &::placeholder {
+    color: $color-text-light;
+  }
+}
+
+.section-title {
+  font-size: $font-size-3xl;
+  margin-bottom: $spacing-xl;
+  text-align: left;
+
+  span {
+    color: $color-primary;
+  }
+
+  @include responsive('tablet') {
+    font-size: $font-size-2xl;
+  }
+}

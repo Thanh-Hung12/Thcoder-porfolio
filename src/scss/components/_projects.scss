@@ -1,0 +1,125 @@
+@import '../abstracts/variables';
+@import '../abstracts/mixins';
+
+.projects {
+  margin-bottom: $spacing-3xl;
+
+  .section-title {
+    margin-bottom: $spacing-2xl;
+  }
+}
+
+.project {
+  display: grid;
+  grid-template-columns: 300px 1fr;
+  gap: $spacing-2xl;
+  margin-bottom: $spacing-3xl;
+  align-items: center;
+  @include transition();
+
+  @include responsive('tablet') {
+    grid-template-columns: 1fr;
+    gap: $spacing-lg;
+  }
+
+  @include responsive('mobile') {
+    gap: $spacing-md;
+    margin-bottom: $spacing-2xl;
+  }
+
+  &:hover {
+    transform: translateX(10px);
+
+    @include responsive('mobile') {
+      transform: translateX(0);
+    }
+  }
+
+  &:nth-child(even) {
+    grid-template-columns: 1fr 300px;
+
+    @include responsive('tablet') {
+      grid-template-columns: 1fr;
+    }
+
+    .project__thumbnail {
+      order: 2;
+
+      @include responsive('tablet') {
+        order: 1;
+      }
+    }
+
+    .project__info {
+      order: 1;
+
+      @include responsive('tablet') {
+        order: 2;
+      }
+    }
+  }
+
+  &__thumbnail {
+    img {
+      width: 100%;
+      height: auto;
+      border-radius: $border-radius-lg;
+      object-fit: cover;
+    }
+  }
+
+  &__info {
+    h3 {
+      font-size: clamp(1.25rem, 3vw, 1.5rem);
+      margin-bottom: $spacing-md;
+      color: $color-white;
+    }
+
+    p {
+      color: $color-text-light;
+      margin-bottom: $spacing-lg;
+      line-height: 1.8;
+      font-size: $font-size-base;
+
+      @include responsive('mobile') {
+        font-size: $font-size-sm;
+      }
+    }
+
+    .tags {
+      display: flex;
+      flex-wrap: wrap;
+      gap: $spacing-sm;
+      margin-bottom: $spacing-lg;
+
+      .tag {
+        background-color: rgba($color-primary, 0.2);
+        color: $color-primary;
+        padding: $spacing-xs $spacing-sm;
+        border-radius: $border-radius-md;
+        font-size: $font-size-sm;
+
+        @include responsive('mobile') {
+          font-size: $font-size-xs;
+          padding: 4px 8px;
+        }
+      }
+    }
+  }
+
+  &__link {
+    a {
+      display: inline-flex;
+      align-items: center;
+      gap: $spacing-sm;
+      color: $color-primary;
+      font-weight: $font-weight-semibold;
+      @include transition();
+
+      &:hover {
+        gap: $spacing-md;
+        color: $color-secondary;
+      }
+    }
+  }
+}

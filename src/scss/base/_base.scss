@@ -1,0 +1,18 @@
+@import '../abstracts/variables';
+@import '../abstracts/mixins';
+@import './reset';
+@import './typography';
+
+body {
+  background-color: $color-dark;
+}
+
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 $spacing-lg;
+
+  @include responsive('tablet') {
+    padding: 0 $spacing-md;
+  }
+}

@@ -1,0 +1,75 @@
+@import '../abstracts/variables';
+@import '../abstracts/mixins';
+
+.nav-bar {
+  position: fixed;
+  left: 50%;
+  bottom: $spacing-lg;
+  transform: translateX(-50%);
+  z-index: 1000;
+  background-color: rgba($color-dark-light, 0.8);
+  backdrop-filter: blur(10px);
+  border-radius: $border-radius-xl;
+  padding: $spacing-sm;
+  border: 1px solid rgba($color-white, 0.1);
+
+  @include responsive('tablet') {
+    bottom: $spacing-md;
+    padding: $spacing-xs;
+  }
+
+  @include responsive('mobile') {
+    bottom: $spacing-sm;
+    left: $spacing-lg;
+    right: $spacing-lg;
+    transform: translateX(0);
+    width: auto;
+  }
+
+  &__list {
+    @include flex-center;
+    gap: $spacing-md;
+    list-style: none;
+
+    @include responsive('tablet') {
+      gap: $spacing-sm;
+    }
+
+    @include responsive('mobile') {
+      gap: $spacing-xs;
+    }
+  }
+
+  &__item {
+    a {
+      @include flex-center;
+      width: 40px;
+      height: 40px;
+      color: $color-text;
+      @include transition();
+      border-radius: $border-radius-md;
+
+      &:hover {
+        color: $color-primary;
+        background-color: rgba($color-primary, 0.1);
+      }
+
+      svg {
+        width: 24px;
+        height: 24px;
+
+        @include responsive('mobile') {
+          width: 20px;
+          height: 20px;
+        }
+      }
+    }
+
+    @include responsive('mobile') {
+      a {
+        width: 36px;
+        height: 36px;
+      }
+    }
+  }
+}

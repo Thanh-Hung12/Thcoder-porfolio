@@ -1,0 +1,43 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+  font-size: 16px;
+}
+
+body {
+  background-color: $color-dark;
+  color: $color-text;
+  font-family: $font-primary;
+  line-height: 1.6;
+  font-weight: $font-weight-normal;
+  overflow-x: hidden;
+}
+
+// Remove scrollbar for Firefox
+* {
+  scrollbar-width: thin;
+  scrollbar-color: $color-dark-light $color-dark;
+}
+
+// Remove scrollbar for Chrome, Safari and Edge
+*::-webkit-scrollbar {
+  width: 8px;
+}
+
+*::-webkit-scrollbar-track {
+  background: $color-dark;
+}
+
+*::-webkit-scrollbar-thumb {
+  background: $color-dark-light;
+  border-radius: $border-radius-lg;
+  
+  &:hover {
+    background: $color-primary;
+  }
+}
